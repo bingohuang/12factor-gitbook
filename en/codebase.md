@@ -5,7 +5,7 @@ A twelve-factor app is always tracked in a version control system, such as [Git]
 
 A *codebase* is any single repo (in a centralized revision control system like Subversion), or any set of repos who share a root commit (in a decentralized revision control system like Git).
 
-![One codebase maps to many deploys](/images/codebase-deploys.png)
+![One codebase maps to many deploys](../images/codebase-deploys.png)
 
 There is always a one-to-one correlation between the codebase and the app:
 
@@ -15,4 +15,3 @@ There is always a one-to-one correlation between the codebase and the app:
 There is only one codebase per app, but there will be many deploys of the app.  A *deploy* is a running instance of the app.  This is typically a production site, and one or more staging sites.  Additionally, every developer has a copy of the app running in their local development environment, each of which also qualifies as a deploy.
 
 The codebase is the same across all deploys, although different versions may be active in each deploy.  For example, a developer has some commits not yet deployed to staging; staging has some commits not yet deployed to production.  But they all share the same codebase, thus making them identifiable as different deploys of the same app.
-
